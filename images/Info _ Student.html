@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)http://localhost/gancopy/coordinator/pages/student_view_advising.php?advid=34&shsid=1601012 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Info | Student</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.2 -->
+    <link href="./Info _ Student_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Font Awesome Icons -->
+    <link href="./Info _ Student_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Ionicons -->
+    <link href="./Info _ Student_files/ionicons.min.css" rel="stylesheet" type="text/css">
+    <!-- Morris chart -->
+    <link href="./Info _ Student_files/morris.css" rel="stylesheet" type="text/css">
+    <!-- jvectormap -->
+    <link href="./Info _ Student_files/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
+     <!-- DATA TABLES -->
+    <link href="./Info _ Student_files/jquery.dataTables.css" rel="stylesheet" type="text/css" --="">
+	<!---------------------------------------------------->
+	<!--link rel="stylesheet" type="text/css" href="../../bootstrap/plugins//DataTables-1.10.5/media/css/datatables.min.css"/>
+	<!---------------------------------------------------->
+    <!-- Daterange picker -->
+    <link href="./Info _ Student_files/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
+    <!-- Theme style -->
+    <link href="./Info _ Student_files/AdminLTE.min.css" rel="stylesheet" type="text/css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins 
+         folder instead of downloading all of them to reduce the load. -->
+    <link href="./Info _ Student_files/_all-skins.min.css" rel="stylesheet" type="text/css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link href="./Info _ Student_files/all.css" rel="stylesheet" type="text/css">
+     <!-- Theme style -->
+    <link href="./Info _ Student_files/all.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	
+	
+	
+	
+  <script src="./Info _ Student_files/jquery.js.download"></script><script>  
+	 $(document).ready(function(){  
+		  $('#strandid').change(function(){  
+			   var keyword = $(this).val();  
+			   $.ajax({  
+					url:"major.php",  
+					method:"POST",  
+					data:{keyword:keyword},  
+					dataType:"text",  
+					success:function(data)  
+					{  
+						 $('#major').html(data);  
+					}  
+			   });  
+		  });  
+	 });  
+	 </script></head>
+
+
+
+
+ 
+
+	 
+<body class="skin-yellow">
+    <div class="wrapper">
+      
+     
+        <header class="main-header">
+        <!-- Logo -->
+        <a href="http://localhost/gancopy/coordinator/pages/dashboard.php" class="logo"><i class="glyphicon glyphicon-home"></i> Coordinator</a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="http://localhost/gancopy/coordinator/pages/student_view_advising.php?advid=34&amp;shsid=1601012#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+		  
+					
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">			
+            <ul class="nav navbar-nav">
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="http://localhost/gancopy/coordinator/pages/student_view_advising.php?advid=34&amp;shsid=1601012#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="./Info _ Student_files/avatar3.png" class="user-image" alt="User Image">
+                  <span class="hidden-xs">Strand Coordinator</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                    <img src="./Info _ Student_files/avatar3.png" class="img-circle" alt="User Image">
+                    <p>
+                      Strand Coordinator
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <li class="user-body">
+                    <div class="col-xs-4 text-center">
+                      <a href="http://localhost/gancopy/coordinator/pages/username.php">Change Username</a>
+                    </div>
+                    <div class="col-xs-4 text-center pull-right">
+                      <a href="http://localhost/gancopy/coordinator/pages/password.php">Change Password</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="http://localhost/gancopy/coordinator/php/logout.php">
+                  Logout <i class="glyphicon glyphicon-log-out" data-toggle="tooltip" title="" data-original-title="Logout"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar" style="height: auto;">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="./Info _ Student_files/avatar3.png" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+              <p>Strand Coordinator</p>
+
+              <a href="http://localhost/gancopy/coordinator/pages/student_view_advising.php?advid=34&amp;shsid=1601012#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+          </div>
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+            <li class="header">NAVIGATION</li>
+			<li>              <a href="http://localhost/gancopy/coordinator/pages/student_search.php">
+                <i class="fa fa-dashboard"></i><span>Advising</span>
+              </a>
+            </li>
+			
+			<li>              <a href="http://localhost/gancopy/coordinator/pages/student_advised.php">
+                <i class="glyphicon glyphicon-list-alt"></i> <span>List of Student Advised</span>
+              </a>
+            </li>
+			
+			<li>              <a href="http://localhost/gancopy/coordinator/pages/strand.php">
+                <i class="glyphicon glyphicon-list-alt"></i> <span>Strand</span>
+              </a>
+            </li>
+			
+			<li>              <a href="http://localhost/gancopy/coordinator/pages/listof_student.php">
+                <i class="glyphicon glyphicon-list-alt"></i> <span>List of Advised Student</span>
+              </a>
+            </li>
+			
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper" style="min-height: 507px;">
+        <!-- Content Header (Page header) -->
+				<section class="content-header">
+					<h1 class="col-md-10">Student Information</h1>
+					<h1><span id="tick2">7:31:38 PM</span>
+
+ 
+   
+</h1>
+				</section>
+				<section class="content">
+						<div class="box">
+							<div class="box-header with-border" style="color:white; background-color: #f39c12;">
+							  <h3 class="box-title"> Student Information</h3>
+							  <!--a class="btn btn-primary pull-right" href="print_preview.php?shsid=" target="_blank">Print Preview</a-->
+							</div>
+							<div class="box-body">
+								<div class="container-fluid">
+									<div class="row">
+										<form method="post" class="form-horizontal" action="http://localhost/gancopy/coordinator/pages/subject_advising.php?stats=old&amp;shsid=1601012">
+											<div class="col-lg-8">
+												<div class="form-group">
+													<label for="shsidtxt" class="control-label col-lg-3">Student ID:</label>
+													<div class="col-lg-9">
+														<label class="control-label" name="shsid"><u>CCT-SHS-1601012</u></label>
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="fnametxt" class="control-label col-lg-3">Name:</label>
+													<div class="col-lg-3">
+														<label class="control-label"><u>HHH , HHH  HH</u></label>
+													</div>
+													<label for="section" class="control-label col-lg-2">Section:</label>
+													<div class="col-lg-4">
+														<input type="text" class="form-control" id="section" name="section" value="1" readonly="">
+													</div>
+												</div>
+												
+												<div class="form-group">
+													<label id="strandtxt" class="control-label col-lg-3">Strand:</label>
+													<div class="col-lg-3">
+															<!--input type="text" class="form-control" id="strand" name="strand" value="" readonly/-->
+														<select id="strandid" name="strandid" class="form-control" required="" readonly="">
+															<option value="HUMSS">HUMSS</option>
+																<option value="HE">HE</option><option value="ICT">ICT</option><option value="ABM">ABM</option><option value="STEM">STEM</option><option value="HUMSS">HUMSS</option><option value="GA">GA</option>														</select>
+													</div>
+													<label for="major" class="control-label col-lg-2">Major:</label>
+													<div class="col-lg-4">
+														<select class="form-control" name="major" id="major" required="" readonly="">
+															<option value="null">null</option>
+														</select>
+													</div>
+												</div>
+											</div>
+												<div class="col-lg-4">
+													<div class="form-group">
+														<label for="gradetxt" class="control-label col-lg-3">Grade:</label>
+														<div class="col-lg-9">
+															<select class="form-control" name="grade" id="grade" required="" readonly="">
+																<option value="Grade 11">Grade 11</option>
+																<option>Grade 11</option>
+																<option>Grade 12</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="sem" class="control-label col-lg-3">Semester:</label>
+														<div class="col-lg-9">
+															<select class="form-control" name="sem" id="sem" required="" readonly="">
+																<option value="First">First</option>
+																<option>First</option>
+																<option>Second</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="sytxt" class="control-label col-lg-3">A. Y. :</label>
+																												<div class="col-lg-9">
+															<input type="text" class="form-control" id="ay" name="ay" value="2016-2017" readonly="">
+														</div>
+													</div>
+												</div>
+												
+											<div class="col-lg-6"><br>
+												<div class="col-lg-12">
+													<table style="width:95%;border-collapse:collapse;">
+														<thead>
+															<tr><th colspan="4" style="text-align:center;border: 1px solid black;padding:3px; background-color:yellow;">Subjects to ENROLL this Semester:</th>
+														</tr></thead>
+														<tbody><tr>
+															<th style="width:20%;border: 1px solid black;padding:3px;">Subject Code</th>
+															<th style="width:60%;border: 1px solid black;padding:3px;">Subject Description</th>
+															<th style="width:20%;border: 1px solid black;padding:3px;">Hours</th>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">ORAL COMMUNICATION IN CONTEXT</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">GENERAL MATHEMATICS</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">UNDERSTANDING CULTURES SOCIETY AND POLITICS</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">PHYSICAL EDUCATION AND HEALTH 1</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">VALUES EDUCATION 1</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">ENGLISH FOR ACADEMIC AND PROFESSIONAL PURPOSES</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">FILIPINO SA PILING LARANGAN</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">DISCIPLINE AND IDEAS IN THE SOCIAL SCIENCE</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											
+													</tbody></table>
+												</div>
+											</div>
+											<div class="col-lg-6"><br>
+												<div class="col-lg-12">
+													<table style="width:95%;border-collapse:collapse;">
+														<thead>
+															<tr><th colspan="4" style="text-align:center;border: 1px solid black;padding:3px; background-color:yellow;">Subjects to ENROLL this Semester:</th>
+														</tr></thead>
+														<tbody><tr>
+															<th style="width:20%;border: 1px solid black;padding:3px;">Subject Code</th>
+															<th style="width:60%;border: 1px solid black;padding:3px;">Subject Description</th>
+															<th style="width:20%;border: 1px solid black;padding:3px;">Hours</th>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">ORAL COMMUNICATION IN CONTEXT</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">GENERAL MATHEMATICS</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">UNDERSTANDING CULTURES SOCIETY AND POLITICS</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">PHYSICAL EDUCATION AND HEALTH 1</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">VALUES EDUCATION 1</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">ENGLISH FOR ACADEMIC AND PROFESSIONAL PURPOSES</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">FILIPINO SA PILING LARANGAN</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											<tr>
+															<td style="border: 1px solid black;text-align:center;padding:3px;"><!--?php// echo strtoupper($row3["subject_code"]);?--></td>
+															<td style="border: 1px solid black;padding:3px;">DISCIPLINE AND IDEAS IN THE SOCIAL SCIENCE</td>
+															<td style="border: 1px solid black;text-align:center;padding:3px;">80 hours</td>
+														</tr>
+																											
+													</tbody></table>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div><!-- /.box-body -->
+							</div>
+						</div><!-- /.box -->
+					</section>
+
+      </div><!-- /.content-wrapper -->
+	
+       <footer>
+  <!-- jQuery 2.1.3 -->
+    <script src="./Info _ Student_files/jQuery-2.1.3.min.js.download"></script>
+    <!-- DATA TABES SCRIPT-->
+    <script src="./Info _ Student_files/jquery.js(1).download" type="text/javascript"></script>
+    <script src="./Info _ Student_files/jquery.dataTables.js.download" type="text/javascript"></script-->
+	<!--script type="text/javascript" src="../../bootstrap/plugins//DataTables-1.10.5/media/js/datatables.min.js"></script>
+    <!-- Bootstrap 3.3.2 JS --> 
+    <script src="./Info _ Student_files/bootstrap.min.js.download" type="text/javascript"></script>  
+    <!-- FastClick -->
+    <script src="./Info _ Student_files/fastclick.min.js.download"></script>
+    <!-- AdminLTE App -->
+    <script src="./Info _ Student_files/app.min.js.download" type="text/javascript"></script>
+    <!-- Force Numeric -->
+     <script src="./Info _ Student_files/forcenumeric.js.download" type="text/javascript"></script>
+    <!-- iCheck -->
+    <script src="./Info _ Student_files/icheck.min.js.download" type="text/javascript"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="./Info _ Student_files/jquery.slimscroll.min.js.download" type="text/javascript"></script>
+    <!-- Morris Charts JavaScript -->
+    <script src="./Info _ Student_files/raphael-min.js.download"></script>
+    <script src="./Info _ Student_files/morris.min.js.download"></script>
+    <!-- datepicker -->
+    <script src="./Info _ Student_files/bootstrap-datepicker.js.download" type="text/javascript"></script>
+      <!-- daterangepicker -->
+    <script src="./Info _ Student_files/daterangepicker.js.download" type="text/javascript"></script>
+     <!-- jQuery Knob Chart -->
+    <script src="./Info _ Student_files/jquery.knob.js.download" type="text/javascript"></script>
+    </footer>
+      
+</div></body></html>
